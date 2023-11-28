@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+class invoice
+{
+int r,q,p;
+invoice(int a,int b)
+{
+System.out.println("enter rate");
+r=a;
+System.out.println("enter quantity");
+q=b;
+}
+void display()
+{
+p=r*q;
+System.out.println("enter the price="+p);
+}
+}
+class report
+{
+public static void main(String args[])
+{
+invoice a=new invoice(50,5);
+a.display();
+}
+} 
