@@ -1,0 +1,23 @@
+import java.util.*;
+class add
+{
+int x,y;
+add(int a,int b)    
+{
+x=a;
+y=b;
+}
+void display()
+{
+System.out.println(x+y);
+}
+}
+class construct
+{
+public static void main(String args[])
+{
+add a=new add(10,20);
+a.display();
+}
+}
+
