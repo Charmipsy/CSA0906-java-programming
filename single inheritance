@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+class P
+{
+int x=10;
+void display()
+{
+System.out.println("am having 10cr"+x);
+}
+}
+class C extends P
+{
+int y=10;
+void display()
+{
+System.out.println("i also have 10cr"+y);
+}
+}
+class single
+{
+public static void main(String args[])
+{
+C a=new C();
+a.display();
+a.display();
+}
+}
