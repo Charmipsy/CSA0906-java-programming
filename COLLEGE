@@ -1,0 +1,91 @@
+import java.io.*;
+class college
+{
+String name="saveetha";
+void display()
+{
+System.out.println("college name="+name);
+}
+}
+class student extends college
+{
+String S_name="chandu";
+int S_no=192211855;
+void display1()
+{
+System.out.println("student name="+S_name);
+System.out.println("student id="+S_no);
+}
+}
+class staff extends college
+{
+String staff_name="suresh";
+int st_no=234432;
+void display2()
+{
+System.out.println("staff name="+staff_name);
+System.out.println("staff no id="+st_no);
+}
+}
+class office extends college
+{
+String cl_name="babu";
+void display3()
+{
+System.out.println("clerk name="+cl_name);
+}
+}
+class teaching extends staff
+{
+String dept="cse";
+void display4()
+{
+System.out.println("department name="+dept);
+}
+}
+class NTS extends staff
+{
+String nts="regular";
+void display5()
+{
+System.out.println("NTS="+nts);
+}
+}
+class subject extends teaching
+{
+String sub="maths";
+void display6()
+{
+System.out.println("teaching subject="+sub);
+}
+}
+class wages extends teaching
+{
+int sal=10000;
+void display7()
+{
+System.out.println("salary="+sal);
+}
+}
+class institution
+{
+public static void main(String args[])  
+{
+student a=new student();
+a.display();
+a.display1();
+staff b=new staff();
+b.display2();
+office c=new office();
+c.display3();
+teaching d=new teaching();
+d.display4();
+NTS e=new NTS();
+e.display5();
+subject f=new subject();
+f.display6();
+wages g=new wages();
+g.display7();
+}
+}
+ 
